@@ -55,7 +55,7 @@ public class UserServices  {
     @Transactional
     public HashMap<String, Object> cvExtractionNlpModel(MultipartFile cv) throws IOException {
         // call the nlp api from abdo after ahmed finish
-    String NlpUrl = "https://scrappingall-production.up.railway.app/process-resume";
+    String NlpUrl = "https://groq-parser-production.up.railway.app/process-resume";
     MultiValueMap<String, Object> body = new LinkedMultiValueMap<>();
     body.add("file",cv.getResource());
     HttpHeaders headers = new HttpHeaders();
