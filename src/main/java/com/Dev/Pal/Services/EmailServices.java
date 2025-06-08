@@ -103,6 +103,8 @@ public class EmailServices {
 
             ObjectMapper objectMapper = new ObjectMapper();
             JobResponse jobResponse = objectMapper.readValue(scrapedJobs, JobResponse.class);
+            System.out.println("Raw response: " + jobResponse);
+
 
 
             if (jobResponse.getResult() == null || jobResponse.getResult().isEmpty()) {
