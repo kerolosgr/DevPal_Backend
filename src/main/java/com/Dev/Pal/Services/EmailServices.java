@@ -121,7 +121,7 @@ public class EmailServices {
     private String extracted(String careerName) {
 
 
-        String nlpUrl = "https://scrappingall-production.up.railway.app/scrape-jobs";
+        String nlpUrl = "https://web-production-1fe7.up.railway.app/scrape-jobs";
 
         // Build URI with query parameters
         UriComponentsBuilder builder = UriComponentsBuilder.fromUriString(nlpUrl)
