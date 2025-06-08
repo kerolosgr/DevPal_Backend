@@ -48,7 +48,7 @@ public class EmailServices {
 
         emailContent = emailContent.replace("{{link}}", link);
         emailContent = emailContent.replace("{{linkportal}}","https://devpal-alpha.vercel.app/discover/"+id);
-        emailContent = emailContent.replace("{{userid}}", id);
+        emailContent = emailContent.replace("{{userid}}", String.valueOf(id));
         helper.setText(emailContent, true);
         mailSender.send(message);
     }
