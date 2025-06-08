@@ -88,7 +88,7 @@ public class EmailServices {
     }
     //only verfied
 
-    @Scheduled(cron = "0 0 * * * *")  // Midnight every Sunday
+    @Scheduled(cron = "0 */5 * * * *")  // Midnight every Sunday
     public void sendEmailCronJobs() throws IOException, MessagingException {
         List<UserEntity> userEntities = userRepository.findAll();
 
